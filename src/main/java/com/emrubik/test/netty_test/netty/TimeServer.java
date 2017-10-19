@@ -32,6 +32,7 @@ public class TimeServer {
         EventLoopGroup workerGroup = new NioEventLoopGroup();
         
         try{
+            System.out.println("启动service端-------------------------");
             ServerBootstrap b = new ServerBootstrap();
             b.group(bossGroup, workerGroup)
             .channel(NioServerSocketChannel.class)
