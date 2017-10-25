@@ -1,10 +1,4 @@
-/*******************************************************************************
- * @(#)WebSocketServerHandler.java 2017年10月23日
- *
- * Copyright 2017 emrubik Group Ltd. All rights reserved.
- * EMRubik PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
- *******************************************************************************/
-package com.emrubik.test.netty_test.netty_websocket;
+package com.emrubik.test.netty_test.netty_websocket1;
 
 import java.util.Date;
 import java.util.logging.Level;
@@ -29,12 +23,7 @@ import io.netty.handler.codec.http.websocketx.WebSocketServerHandshaker;
 import io.netty.handler.codec.http.websocketx.WebSocketServerHandshakerFactory;
 import io.netty.util.CharsetUtil;
 
-/**
- * @author lilinfeng
- * @version 1.0
- * @date 2014年2月14日
- */
-public class WebSocketServerHandler extends SimpleChannelInboundHandler<Object> {
+public class MyWebSocketServerHandler extends SimpleChannelInboundHandler<Object> {
 
     private static final Logger logger = Logger
             .getLogger(WebSocketServerHandshaker.class.getName());
@@ -140,4 +129,5 @@ public class WebSocketServerHandler extends SimpleChannelInboundHandler<Object> 
         cause.printStackTrace();
         ctx.close();
     }
+
 }
